@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Work+Sans&display=swap');
+body
+{
+    background-color: rgb(26, 26, 26);
+}
+
+.navbar {
+    
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -250px;
+    background: rgb(14, 14, 14); 
+    display: block;
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 20px;
+
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#inputs
+{
+    top: 50%;
+    left: 50%;
+    margin: 35px 0 0 -250px;
+}
+
+.generate
+{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin: 250 0 0 -250px;
+    background: rgb(0,255,206);
+    background: linear-gradient(90deg, rgba(0,255,206,1) 0%, rgba(0,235,190,1) 25%, rgba(0,212,171,1) 50%, rgba(0,186,150,1) 75%, rgba(0,152,122,1) 100%);
+    width: 40%;
+    height: 20%;
+
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: 
+    rgb(0, 0, 0); 
+      linear-gradient(to right, red , blue); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.generate:hover
+{
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+    transition: background-color 0.25s ease-out;
+}
+
+.generate:after
+{
+    content: '';
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 10%;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.generate:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.w-time
+{
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    margin: 250 0 0 -250px;
+    width: 40%;
+    height: 20%;
+
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+#nick 
+{
+font-size: 16px;
+font-size: Max(16px, 1em);
+font-family: inherit;
+padding: 0.25em 0.5em;
+background-color: rgb(190, 190, 190);
+    
+border: 2px solid var(--input-border);
+border-radius: 4px;
+transition: 2280ms box-shadow ease-in-out;
+}
+
+#psd
+{
+font-size: 16px;
+font-size: Max(16px, 1em);
+font-family: inherit;
+padding: 0.25em 0.5em;
+background-color: rgb(190, 190, 190);
+
+border: 2px solid var(--input-border);
+border-radius: 4px;
+transition: 2280ms box-shadow ease-in-out;
+}
